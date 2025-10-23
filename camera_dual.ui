@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1015</width>
+    <width>1059</width>
     <height>697</height>
    </rect>
   </property>
@@ -40,14 +40,7 @@
            <item row="1" column="11">
             <widget class="QCheckBox" name="led_x_Box">
              <property name="text">
-              <string>XLED</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="9">
-            <widget class="QLabel" name="label_4">
-             <property name="text">
-              <string>View</string>
+              <string>X LED</string>
              </property>
             </widget>
            </item>
@@ -183,6 +176,13 @@
                <string>Y</string>
               </property>
              </item>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>View </string>
+             </property>
             </widget>
            </item>
           </layout>
