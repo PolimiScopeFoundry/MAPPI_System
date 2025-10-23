@@ -49,10 +49,17 @@ class mappi_app(BaseMicroscopeApp):
 
 if __name__ == '__main__':
     import sys
+    import os
 
     app = mappi_app(sys.argv)
-    app.settings_load_ini(".\\Settings\\newsettings.ini")
     
+    path = os.path.dirname(os.path.realpath(__file__))
+    new_path = os.path.join(path, 'Settings', 'newsettings.ini')
+
+    app.settings_load_ini(new_path)
+
+
+
     for hc_name, hc in app.hardware.items():
           hc.settings['connected'] = True    # connect all the hardwares  
     
