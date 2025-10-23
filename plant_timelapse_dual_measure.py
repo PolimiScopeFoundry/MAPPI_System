@@ -201,8 +201,8 @@ class PlantTimeLapseDualMeasure(Measurement):
                         self.images[cam_idx] = img
                     else:
                         self.images.append(img) 
-                    if cam == self.cameras[VIEWS[self.settings['camera_in_use']]]:
-                        self.img = img             
+                    if cam == self.cameras[VIEWS[self.settings['camera_in_use']]] and frame_idx>0:
+                        self.img = img      # note that img (for display is shown only for the second frame because we skip the first one)       
                 if self.settings['save_h5']:
                     if not first_frame_acquired:
                         if time_lapse_idx == 0:
